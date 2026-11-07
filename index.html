@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SBA2 Accessible Design Co.</title>
+</head>
+
+<body>
+    <!-- Header: logo and main navigation -->
+    <header>  
+        <img src="./Img/its-a-design-company-called-accessible-design-co.png" alt="Accessible Design Co. Logo">
+        <nav role="navigation" aria-label="main navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Hero: main heading and call to action -->
+        <section id="hero">   
+            <h1>Building Accessible Designs For All</h1>
+            <p>We create digital experiences that are easy to see, navigate, and use, no matter who is visiting.</p>
+            <a href="#contact" class="cta-button" role="button">Connect with Us</a>
+        </section>
+        
+        <!-- About Us -->
+        <section id="about">  
+            <h2>Who is Accessible Design Co?</h2>
+            <article>
+                <p>Accessible Design Co. is a web design studio focused on building websites that everyone can use. We believe good design should work for every visitor, regardless of ability or device.</p>
+            </article>
+        </section>
+        
+        <!-- Services: grid of service cards -->
+        <section id="services"> 
+            <h2>Services</h2>
+            <div class="services-grid-container">
+                <div class="services-card">
+                    <img src="./Img/Accessibility-Icon.jpg" alt="Accessibility Icon">
+                    <h3>Accessibility Audits</h3>
+                    <p>We review your site and show you exactly what to fix.</p>
+                </div>
+                <div class="services-card">
+                    <img src="./Img/Responsive-Web-Design-Icon.png" alt="Web Design Icon">
+                    <h3>Responsive Web Design</h3>
+                    <p>Sites that work on every screen size.</p>
+                </div>
+                <div class="services-card">
+                    <img src="./Img/Web-Development-Icon.png" alt="Web Development Icon">
+                    <h3>Web Development</h3>
+                    <p>Clean, accessible code built to last.</p>
+                </div>
+                <div class="services-card">
+                    <img src="./Img/Accessibility-Training-Icon.png" alt="Accessibility Training Icon">
+                    <h3>Accessibility Training</h3>
+                    <p>Teaching your team to build for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section id="contact"> 
+            <h2>Contact Us</h2>
+            <form>
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" required aria-describedby="message-hint"></textarea>
+                    <p id="message-hint">Tell us a little about your project.</p>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer: contact info, social links, copyright -->
+    <footer>  
+        <div class="footer-contact">
+            <h2>Get in Touch</h2>
+            <address>
+            123 Main Street, Atlanta, GA 30303<br>
+            <a href="mailto:sba@accessibledesign.co">sba@accessibledesign.co</a><br>
+            <a href="tel:+18000000000">1(800) 000-0000</a>
+            </address>
+        </div>
+       
+        <nav class="footer-social" aria-label="social media">
+            <h2>Follow Us</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+            </ul>
+        </nav>
+       
+        <p>&copy; 2026 Accessible Design Co. All rights reserved.</p> 
+    
+    </footer>
+</body>
+</html>

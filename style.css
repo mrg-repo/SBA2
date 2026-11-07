@@ -1,0 +1,89 @@
+body {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+header img {
+       width: 150px;
+   }
+
+.services-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.services-card img {
+    width: 85px;
+}
+
+label {
+    display: block;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #c71585;
+    color: #ffffff;
+}
+
+#hero {
+    background-image: url("./Img/background-hero.jpg");
+    background-size: cover;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #ff1493;
+}
+
+
+@media (max-width: 1024px) {
+    .services-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .services-grid-container {
+            grid-template-columns: 1fr;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+}
+
